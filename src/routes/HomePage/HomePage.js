@@ -2,7 +2,7 @@ import styles from './homepage.module.css';
 import SearchBar from '../../components/SearchBar';
 import Header from '../../components/Header';
 import SideBar from '../../components/SideBar';
-import { Paper, Typography, Fab } from '@mui/material';
+import { Paper, Typography, Fab, CardContent,Card } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import EditIcon from '@mui/icons-material/Edit';
 import styled from '@emotion/styled';
@@ -16,6 +16,12 @@ const HomePage=()=>{
   const AddHandler=()=>{
     setIsAdding(true);
   }
+  const MyCard=styled(Card)({
+    width:900,
+    height:450,
+    marginTop:40,
+    marginLeft:70,
+  });
 
   const MyPaper=styled(Paper)({
     alignItems: 'center',
@@ -35,8 +41,15 @@ const HomePage=()=>{
             <SideBar/>
             <MyPaper elevation={3}>
            {isAdding?(
-            <></>
+            <>
+            <Typography variant='h5' component='div' sx={{marginTop:5, marginLeft:5, fontWeight:600}}>글쓰기(자유게시판)</Typography>
+            <MyCard><CardContent>
+              
+              </CardContent></MyCard>
+
+            </>
            ):(
+            <>
               <div className={styles.title}>
                 <Typography variant='h5' component='div' sx={{marginTop:5, marginLeft:5, fontWeight:600}}>자유게시판</Typography>
               <div className={styles.buttonicons}>
@@ -51,6 +64,7 @@ const HomePage=()=>{
               <div className={styles.table}>
               <ShowTable/>
               </div>
+              </>
             )}
             </MyPaper>
           </div>

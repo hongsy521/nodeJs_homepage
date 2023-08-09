@@ -8,11 +8,14 @@ import SignInPage from './routes/SignInPage/SignInPage';
 
 function App() {
 
+  /*
   useEffect(()=>{
+    
     fetch("http://localhost:8080/api")
     .then(res=>res.json())
     .then(data=>console.log(data));
   });
+  */
 
   return (
     <Router>
