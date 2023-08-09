@@ -1,0 +1,30 @@
+.viewport{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.4);
+    height: 740px;
+}
+.contents{
+    width: 90vw;
+    
+}
+.headtext{
+    font-size: xx-large;
+    color: rgb(59, 59, 206);
+}
+.signInwrap{
+    width:  90%;
+    height: 90%;
+    margin-top: 40px;
+    margin-left: 18px;
+}
+.text{
+    margin-left: 40px;
+    text-align: left;
+    font-weight: 600;
+}
+.wrap{
+    margin-bottom: 60px;
+}

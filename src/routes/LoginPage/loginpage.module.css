@@ -1,0 +1,29 @@
+.viewport{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.4);
+}
+.contents{
+    width: 90vw;
+    
+}
+.headtext{
+    font-size: xx-large;
+    color: rgb(59, 59, 206);
+}
+.loginwrap{
+    width:  90%;
+    height: 90%;
+    margin-top: 40px;
+    margin-left: 18px;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    margin-top: 20px;
+    margin-left: -80px;
+}
