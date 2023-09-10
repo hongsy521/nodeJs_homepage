@@ -1,4 +1,4 @@
-import styles from './signinpage.module.css';
+import styles from './signuppage.module.css';
 import { Button, Paper, TextField, Box, Checkbox, FormControlLabel } from '@mui/material';
 import {styled} from "@mui/material/styles"
 

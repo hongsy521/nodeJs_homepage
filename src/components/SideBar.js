@@ -48,7 +48,7 @@ const SideBar=()=>{
                     <MyListItemButton component="a" href="#simple-list">
                     <ListItemText primary="게시판" />
                     </MyListItemButton>
-                </MyListItem>
+                </MyListItem>   
                 
                 
                 </MyList> 

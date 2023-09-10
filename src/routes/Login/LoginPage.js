@@ -1,9 +1,13 @@
 import styles from './loginpage.module.css';
 import { Button, Paper, TextField, Box, Checkbox, FormControlLabel } from '@mui/material';
 import {styled} from "@mui/material/styles"
+import { useState } from 'react';
 
 
-const LoginPage=()=>{
+const LoginPage=(props)=>{
+    const [id,setId]=useState("");
+    const [password, setPassword]=useState("");
+
     const MyTextField=styled(TextField)({
         width:280,
         marginTop:30,
@@ -37,14 +41,18 @@ const LoginPage=()=>{
       <Paper elevation={3} >
         <div className={styles.loginwrap}>
       <div className={styles.headtext}>로그인</div>
+
+      <form>
       <div className={styles.inputbox}>
-      <MyTextField variant='standard' label='아이디'/>
-      <MyTextField variant='standard' label='비밀번호'/>
+      <MyTextField variant='standard' label='아이디' onChange={event=>{setId(event.target.value);}}/>
+      <MyTextField variant='standard' label='비밀번호'onChange={event=>{setPassword(event.target.value);}}/>
       </div>
       <div className={styles.checkbox}>
       <FormControlLabel required control={<Checkbox/>} label='로그인 정보 저장'/>
       </div>
       <MyButton variant='contained'>로그인</MyButton>
+      </form>
+
       <div className={styles.foottext}>
       <a href='/signIn'>회원가입하기</a>
       </div>
